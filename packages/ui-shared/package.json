@@ -1,5 +1,5 @@
 {
-  "name": "@injectivelabs/ui-shared",
+  "name": "@thomasralee/ui-shared",
   "version": "1.10.12",
   "license": "MIT",
   "author": "Thomas Lee <thomas@injectiveprotocol.com>",
@@ -38,9 +38,6 @@
     "vee-validate": "4.7.3"
   },
   "devDependencies": {
-    "@injectivelabs/eslint-config": "^1.1.4",
-    "@injectivelabs/prettier-config": "^1.0.1",
-    "@injectivelabs/stylelint-config": "^1.1.2",
     "@injectivelabs/utils": "1.10.6",
     "@nuxt/module-builder": "0.3.0",
     "@nuxt/schema": "3.4.1",
