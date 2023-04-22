@@ -1,6 +1,6 @@
 {
   "name": "@thomasralee/eslint-config",
-  "version": "0.0.1",
+  "version": "0.0.2-beta.241+684740c",
   "description": "Sharable eslint config",
   "author": "Thomas Lee <thomas@injectiveprotocol.com>",
   "license": "MIT",
@@ -17,5 +17,6 @@
     "eslint-plugin-nuxt": "latest",
     "eslint-plugin-prettier": "latest",
     "eslint-plugin-vue": "9.11.0"
-  }
+  },
+  "gitHead": "684740cfc62bd7ee0a7bcd6fb2d8c1d3f28db14e"
 }

@@ -1,6 +1,6 @@
 {
   "name": "@thomasralee/prettier-config",
-  "version": "1.0.1",
+  "version": "1.0.2-beta.241+684740c",
   "description": "Sharable prettier config",
   "author": "Thomas Lee <thomas@injectiveprotocol.com>",
   "license": "MIT",
@@ -10,5 +10,6 @@
   },
   "devDependencies": {
     "prettier": "^2.8.7"
-  }
+  },
+  "gitHead": "684740cfc62bd7ee0a7bcd6fb2d8c1d3f28db14e"
 }
