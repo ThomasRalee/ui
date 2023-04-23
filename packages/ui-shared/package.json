@@ -1,6 +1,6 @@
 {
   "name": "@thomasralee/ui-shared",
-  "version": "1.10.12",
+  "version": "1.0.0",
   "license": "MIT",
   "author": "Thomas Lee <thomas@injectiveprotocol.com>",
   "type": "module",
