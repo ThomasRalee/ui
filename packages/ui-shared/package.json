@@ -1,6 +1,6 @@
 {
   "name": "@thomasralee/ui-shared",
-  "version": "1.1.2-beta.2+17a4aeb",
+  "version": "1.1.2",
   "license": "MIT",
   "author": "Thomas Lee <thomas@injectiveprotocol.com>",
   "type": "module",
@@ -72,5 +72,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "17a4aebdd978d5f4629a87d0f630733cf1030c88"
+  "gitHead": "403b6845ab0400fdc3b12ff17b91bd1e1a328fb6"
 }
