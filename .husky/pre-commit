@@ -2,5 +2,6 @@
 . "$(dirname "$0")/_/husky.sh"
 
 yarn --cwd ./packages/ui-shared dev:prepare
+yarn --cwd ./packages/ui-shared test:coverage
 yarn --cwd ./packages/ui-shared prepack
 yarn --cwd ./packages/ui-shared lint-staged
