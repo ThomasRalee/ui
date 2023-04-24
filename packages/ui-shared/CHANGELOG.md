@@ -3,6 +3,55 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.4-beta.3](https://github.com/ThomasRalee/ui/compare/@thomasralee/ui-shared@1.1.4-beta.2...@thomasralee/ui-shared@1.1.4-beta.3) (2023-04-24)
+
+**Note:** Version bump only for package @thomasralee/ui-shared
+
+
+
+
+
+## [1.1.4-beta.2](https://github.com/ThomasRalee/ui/compare/@thomasralee/ui-shared@1.1.4-beta.1...@thomasralee/ui-shared@1.1.4-beta.2) (2023-04-24)
+
+**Note:** Version bump only for package @thomasralee/ui-shared
+
+
+
+
+
+## [1.1.4-beta.1](https://github.com/ThomasRalee/ui/compare/@thomasralee/ui-shared@1.1.4-beta.0...@thomasralee/ui-shared@1.1.4-beta.1) (2023-04-24)
+
+**Note:** Version bump only for package @thomasralee/ui-shared
+
+
+
+
+
+## [1.1.4-beta.0](https://github.com/ThomasRalee/ui/compare/@thomasralee/ui-shared@1.1.3...@thomasralee/ui-shared@1.1.4-beta.0) (2023-04-24)
+
+**Note:** Version bump only for package @thomasralee/ui-shared
+
+
+
+
+
+## [1.1.3](https://github.com/ThomasRalee/ui/compare/@thomasralee/ui-shared@1.1.2...@thomasralee/ui-shared@1.1.3) (2023-04-24)
+
+
+### Bug Fixes
+
+* checkbox component ([8ab1499](https://github.com/ThomasRalee/ui/commit/8ab14999f02ecd61ebc9d382fb0155e847ec8baa))
+* minor ([60ec01c](https://github.com/ThomasRalee/ui/commit/60ec01c2e1919f87816e3ca11b5ceb44f6b31bd3))
+* minor ([9e8075b](https://github.com/ThomasRalee/ui/commit/9e8075b98875aa093be8dc56b45c7e7888e40bda))
+* minor ([51213bc](https://github.com/ThomasRalee/ui/commit/51213bcba5617f79b77aa17a2f9b3e73f73580ba))
+* minor ([5dfe412](https://github.com/ThomasRalee/ui/commit/5dfe412eb11d2f56872c8ee684738a8e1901ba89))
+* minor ([69d75e7](https://github.com/ThomasRalee/ui/commit/69d75e7d0852b20015ed320fbbf42990f866dcb8))
+* sorting ([da9c00e](https://github.com/ThomasRalee/ui/commit/da9c00eb33d936744ab48bc39c2016d385c8c8d0))
+
+
+
+
+
 ## [1.1.2](https://github.com/ThomasRalee/ui/compare/@thomasralee/ui-shared@1.1.1...@thomasralee/ui-shared@1.1.2) (2023-04-23)
 
 **Note:** Version bump only for package @thomasralee/ui-shared

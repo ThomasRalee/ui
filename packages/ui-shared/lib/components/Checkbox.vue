@@ -2,9 +2,10 @@
 import { computed } from 'vue'
 
 const props = defineProps({
-  checkboxOnRight: Boolean,
+  test: Boolean,
   disabled: Boolean,
-  modelValue: Boolean
+  modelValue: Boolean,
+  checkboxOnRight: Boolean
 })
 
 const emits = defineEmits<{

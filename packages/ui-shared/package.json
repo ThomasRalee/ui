@@ -1,6 +1,6 @@
 {
   "name": "@thomasralee/ui-shared",
-  "version": "1.1.2",
+  "version": "1.1.4-beta.3",
   "license": "MIT",
   "author": "Thomas Lee <thomas@injectiveprotocol.com>",
   "type": "module",
@@ -23,7 +23,7 @@
     "dist"
   ],
   "scripts": {
-    "prepack": "yarn test:coverage && nuxt-module-build",
+    "prepack": "nuxt-module-build",
     "dev": "nuxi dev playground",
     "dev:build": "nuxi build playground",
     "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground",
@@ -72,5 +72,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "403b6845ab0400fdc3b12ff17b91bd1e1a328fb6"
+  "gitHead": "db9728fbb84b4294b3bc042ee3aa9e4a4ddfa2b6"
 }
