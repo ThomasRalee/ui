@@ -32,4 +32,4 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Publish
-        run: yarn release:alpha -- --yes
+        run: yarn release:alpha --yes
