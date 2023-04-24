@@ -25,6 +25,6 @@ jobs:
           npx lerna bootstrap
 
       - name: Publish
-        run: yarn publish:stable
+        run: npx lerna publish --conventional-commits --conventional-graduate --dist-tag latest
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
