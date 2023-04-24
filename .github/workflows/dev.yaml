@@ -31,5 +31,8 @@ jobs:
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
+      - name: Version
+        run: npx lerna version --conventional-commits --conventional-prerelease --preid beta --canary  --yes
+
       - name: Publish
-        run: yarn release:alpha --yes
+        run: npx lerna publish from-git --dist-tag next --yes
