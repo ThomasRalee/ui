@@ -6,7 +6,7 @@ on:
       - dev
 
 jobs:
-  check:
+  dev:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,7 +22,6 @@ jobs:
 
       - name: Install dependencies
         run: | # Install and link dependencies
-          npm ci
           npx lerna bootstrap
 
       - name: Publish
