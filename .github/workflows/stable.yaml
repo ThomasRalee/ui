@@ -1,9 +1,9 @@
-name: Publish dev
+name: Publish stable
 
 on:
   push:
     branches:
-      - dev
+      - master
 
 jobs:
   publish:
@@ -38,5 +38,5 @@ jobs:
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor}}@users.noreply.github.com"
 
-          npx lerna version --conventional-commits --conventional-prerelease --preid beta --yes
-          npx lerna publish from-git --dist-tag next --yes
+          npx lerna version --conventional-commits --conventional-graduate --yes
+          npx lerna publish from-git --dist-tag latest --yes
