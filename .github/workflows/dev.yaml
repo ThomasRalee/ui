@@ -22,9 +22,6 @@ jobs:
 
       - name: Install and link dependencies
         run: |
-          yarn --cwd ./packages/ui-shared install --force
-          yarn --cwd ./packages/ui-shared dev:prepare
-          yarn build
           npx lerna bootstrap
 
       - name: 'Setup npm'
@@ -39,5 +36,6 @@ jobs:
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor}}@users.noreply.github.com"
 
-          npx lerna version --conventional-commits --conventional-prerelease --preid beta --yes
-          npx lerna publish from-package --dist-tag next --yes
+          npx lerna publish --conventional-commits --conventional-graduate --preid beta --canary --dist-tag next --yes
+          # npx lerna version --conventional-commits --conventional-prerelease --preid beta --yes
+          # npx lerna publish from-package --dist-tag next --yes

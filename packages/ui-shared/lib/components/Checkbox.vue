@@ -2,7 +2,6 @@
 import { computed } from 'vue'
 
 const props = defineProps({
-  test3: Boolean,
   disabled: Boolean,
   modelValue: Boolean,
   checkboxOnRight: Boolean
