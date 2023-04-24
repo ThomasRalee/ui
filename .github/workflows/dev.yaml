@@ -32,6 +32,7 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Publish
-        run:
-          npx lerna publish --conventional-commits --conventional-graduate --preid beta --canary --dist-tag next --no-verify-access --yes &&
-          npx lerna publish from-package
+        run: npx lerna version --conventional-graduate --preid beta --canary --no-git-tag-version --conventional-prerelease --yes && git add -u .
+
+      - name: Deploy
+        run: npx lerna publish from-package --pre-dist-tag next --no-verify-access --yes
