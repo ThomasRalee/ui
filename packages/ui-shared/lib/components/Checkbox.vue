@@ -2,8 +2,8 @@
 import { computed } from 'vue'
 
 const props = defineProps({
-  disabled: Boolean,
   modelValue: Boolean,
+  disabled: Boolean,
   checkboxOnRight: Boolean
 })
 
