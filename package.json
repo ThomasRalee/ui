@@ -11,10 +11,7 @@
   "scripts": {
     "prepare": "husky install",
     "publish": "lerna publish",
-    "build": "lerna run build",
-    "prerelease:alpha": "lerna version --preid beta --no-git-tag-version --conventional-commits --conventional-prerelease --yes && git add -u . prepatch",
-    "release:alpha": "lerna publish from-package --pre-dist-tag next",
-    "postrelease:alpha": "git commit -m 'chore(release): Publish alpha' && git push"
+    "build": "lerna run build"
   },
   "workspaces": [
     "packages/*"
