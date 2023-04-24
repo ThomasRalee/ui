@@ -15,7 +15,6 @@ export default defineConfig({
     environment: 'jsdom',
     globals: true,
     testTimeout: 30 * 1000,
-    minThreads: 3,
     include: ['./lib/**/*.spec.ts']
   }
 })

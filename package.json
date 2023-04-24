@@ -12,8 +12,7 @@
     "prepare": "husky install",
     "publish": "lerna publish",
     "build": "lerna run build",
-    "publish:stable": "lerna publish --conventional-commits --conventional-graduate --dist-tag latest",
-    "publish:dev": "lerna publish --conventional-commits --conventional-graduate --preid beta --canary --dist-tag next --no-verify-access --yes"
+    "publish:stable": "lerna publish --conventional-commits --conventional-graduate --dist-tag latest"
   },
   "workspaces": [
     "packages/*"

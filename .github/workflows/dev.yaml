@@ -37,6 +37,6 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Publish
-        run: yarn publish:dev
+        run: npx lerna publish --conventional-commits --conventional-graduate --preid beta --canary --dist-tag next --no-verify-access --yes --force-publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
