@@ -13,7 +13,7 @@
     "publish": "lerna publish",
     "build": "lerna run build",
     "publish:stable": "lerna publish --conventional-commits --conventional-graduate --dist-tag latest",
-    "publish:dev": "lerna publish --conventional-commits --conventional-graduate --preid beta --canary --dist-tag next --no-verify-access"
+    "publish:dev": "lerna publish --conventional-commits --conventional-graduate --preid beta --canary --dist-tag next --no-verify-access --yes"
   },
   "workspaces": [
     "packages/*"
