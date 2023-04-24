@@ -6,7 +6,9 @@
     "@commitlint/cli": "^17.6.1",
     "@commitlint/config-conventional": "^17.6.1",
     "husky": "^8.0.2",
-    "lerna": "^6.6.1"
+    "lerna": "^6.6.1",
+    "publish:stable": "lerna publish --conventional-commits --conventional-graduate --dist-tag latest",
+    "publish:dev": "lerna publish --conventional-commits --conventional-graduate --preid beta --canary --dist-tag next"
   },
   "scripts": {
     "prepare": "husky install",
