@@ -22,6 +22,9 @@ jobs:
 
       - name: Install and link dependencies
         run: |
+          yarn --cwd ./packages/ui-shared install --force
+          yarn --cwd ./packages/ui-shared dev:prepare
+          yarn build
           npx lerna bootstrap
 
       - name: 'Setup npm'
