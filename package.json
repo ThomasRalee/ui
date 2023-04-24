@@ -6,10 +6,11 @@
     "@commitlint/cli": "^17.6.1",
     "@commitlint/config-conventional": "^17.6.1",
     "husky": "^8.0.2",
+    "is-ci": "^3.0.1",
     "lerna": "^6.6.1"
   },
   "scripts": {
-    "prepare": "husky install",
+    "prepare": "is-ci || husky install",
     "publish": "lerna publish",
     "build": "lerna run build"
   },
