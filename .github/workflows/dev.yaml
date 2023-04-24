@@ -25,6 +25,6 @@ jobs:
           npx lerna bootstrap
 
       - name: Publish
-        run: yarn publish:dev
+        run: yarn publish:stable
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
