@@ -21,7 +21,7 @@ jobs:
           node-version: '14'
 
       - name: Build ui shared
-        run: yarn --cwd ./packages/ui-shared dev:prepare
+        run: yarn --cwd ./packages/ui-shared && yarn --cwd ./packages/ui-shared dev:prepare
 
       - name: Install dependencies
         run: | # Install and link dependencies
