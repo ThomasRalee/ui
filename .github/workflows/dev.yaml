@@ -20,15 +20,10 @@ jobs:
         with:
           node-version: '14'
 
-      - name: Build ui shared
-        run: yarn --cwd ./packages/ui-shared install --force && yarn --cwd ./packages/ui-shared dev:prepare
-
-      - name: Install dependencies
-        run: | # Install and link dependencies
+      - name: Install and link dependencies
+        run: yarn --cwd ./packages/ui-shared install --force
+          yarn --cwd ./packages/ui-shared dev:prepare
           yarn build
-
-      - name: Link dependencies
-        run: | # Install and link dependencies
           npx lerna bootstrap
 
       - name: 'Setup npm'
@@ -37,6 +32,6 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Publish
-        run: npx lerna publish --conventional-commits --conventional-graduate --preid beta --canary --dist-tag next --no-verify-access --yes --no-push
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run:
+          npx lerna publish --conventional-commits --conventional-graduate --preid beta --canary --dist-tag next --no-verify-access --yes
+          npx lerna publish from-package
