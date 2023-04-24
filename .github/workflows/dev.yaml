@@ -30,6 +30,6 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Publish
-        run: yarn publish:stable
+        run: yarn publish:dev
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
