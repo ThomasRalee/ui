@@ -22,6 +22,10 @@ jobs:
 
       - name: Install dependencies
         run: | # Install and link dependencies
+          yarn build
+
+      - name: Link dependencies
+        run: | # Install and link dependencies
           npx lerna bootstrap
 
       - name: 'Setup npm'
