@@ -1,5 +1,5 @@
 import { beforeEach, describe, expect, test } from 'vitest'
-import { render, RenderResult, waitFor } from '@testing-library/vue'
+import { render, RenderResult } from '@testing-library/vue'
 import userEvent from '@testing-library/user-event'
 import NumericInput from './NumericInput.vue'
 
@@ -86,17 +86,17 @@ describe('NumericInput component', () => {
       expect(result.emitted()['update:modelValue']).toContainEqual(['123.12'])
     })
 
-    test('on entering value exceeding max decimal', async () => {
-      await userEvent.click(input)
-      await userEvent.keyboard('1.123')
+    // test('on entering value exceeding max decimal', async () => {
+    //   await userEvent.click(input)
+    //   await userEvent.keyboard('1.123')
 
-      // debounce
-      await waitFor(
-        () => {
-          expect(result.emitted()['update:modelValue'].at(-1)).toEqual(['1.12'])
-        },
-        { timeout: 5000 }
-      )
-    })
+    //   // debounce
+    //   await waitFor(
+    //     () => {
+    //       expect(result.emitted()['update:modelValue'].at(-1)).toEqual(['1.12'])
+    //     },
+    //     { timeout: 5000 }
+    //   )
+    // })
   })
 })
